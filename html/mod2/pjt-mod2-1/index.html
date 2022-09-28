@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean Silva">
+    <meta name="description" content="Softex - Atividade 02">
+    <meta name="keywords" content="Front-End, Html, Softex">
+    <title>Lugares Turísticos</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section.img{
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            text-align: center;
+        }
+        section.img:hover{
+            border: 10px solid #136497;
+    
+            
+        }
+        #title{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        .nameimg{
+            color: white;
+            font-style: italic;
+            font-size: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border-radius: 5px;
+            box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+            padding: 30px;
+            margin: 20px;
+            width: 400px;
+            transition: all 0.3s ease-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+ 
+        .card p {
+            color: #a3a5ae;
+            font-size: 16px;
+        }
+ 
+        .image {
+            float: right;
+            max-width: 64px;
+            max-height: 64px;
+        }
+        .blue {
+            border-left: 3px solid #4895ff;
+        }
+        
+        .green {
+            border-left: 3px solid #3bb54a;
+        }
+        
+        .red {
+            border-left: 3px solid #b3404a;
+        }
+        .green2{
+            border-left: 3px solid #02ff1b;
+        }
+        .country{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Lugares Turísticos na Europa</h1>
+    <div class="row">
+    <section class="img">
+        <img src="img/bigben.jpg" alt="BigBen" width="300" height="200">
+        <p class="nameimg">Big Ben - Londres</p>
+    </section>
+    <section class="img">
+        <img src="img/coliseu.jpg" alt="Coliseu" width="300" height="200">
+        <p class="nameimg">Coliseu - Roma</p>
+    </section>
+    <section class="img">
+        <img src="img/bradenburger.jpg" alt="BradenBurger" width="300" height="200">
+        <p class="nameimg">BradenBurger Gate - Berlin</p>
+    </section>
+    <section class="img">
+        <img src="img/eiffel.jpg" alt="Eiffel" width="300" height="200">
+        <p class="nameimg">Torre Eiffel - Paris</p>
+    </section>
+    </div>
+
+    <div class="row">
+
+        <div class="card green">
+          <h2 class="country">Reino Unido</h2>
+          <p>Londres</p>
+          <img class="image" src="img/uk.png" alt="us" />
+        </div>
+   
+        <div class="card blue">
+          <h2 class="country">França</h2>
+          <p>Paris</p>
+          <img class="image" src="img/bandeira-frança.png" alt="fr" />
+        </div>
+   
+        <div class="card red">
+          <h2 class="country">Alemanha</h2>
+          <p>Berlim</p>
+          <img class="image" src="img/ge.png" alt="ge" />
+        </div>
+
+        <div class="card green2">
+            <h2 class="country">Itália</h2>
+            <p>Roma</p>
+            <img class="image" src="img/it.png" alt="ge" />
+          </div>
+      </div>
+</body>
+</html>
